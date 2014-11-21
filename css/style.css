@@ -1,0 +1,848 @@
+@font-face {
+	font-family: 'FunctionPro';
+	src: url('../fonts/functionpro-medium-webfont.eot'); /* IE9 Compat Modes */
+	src: url('../fonts/functionpro-medium-webfont.eot?iefix') format('eot'), /* IE6-IE8 */
+	     url('../fonts/functionpro-medium-webfont.woff') format('woff'), /* Modern Browsers */
+	     url('../fonts/functionpro-medium-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+	     url('../fonts/functionpro-medium-webfont.svg#webfontZ1DxuMYj') format('svg'); /* Legacy iOS */
+	font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: 'FunctionPro';
+	src: url('../fonts/functionpro-mediumoblique-webfont.eot'); /* IE9 Compat Modes */
+	src: url('../fonts/functionpro-mediumoblique-webfont.eot?iefix') format('eot'), /* IE6-IE8 */
+	     url('../fonts/functionpro-mediumoblique-webfont.woff') format('woff'), /* Modern Browsers */
+	     url('../fonts/functionpro-mediumoblique-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+	     url('../fonts/functionpro-mediumoblique-webfont.svg#webfontUNv5LEnN') format('svg');
+    font-style: italic;
+    font-weight: normal;
+}
+
+/* HTML5 ✰ Boilerplate
+ * ==|== normalize ==========================================================
+ */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+audio:not([controls]) { display: none; }
+[hidden] { display: none; }
+
+html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+body { margin: 0; font-size: 13px; line-height: 1.231; }
+body, button, input, select, textarea { font-family: sans-serif; color: #222; }
+
+::-moz-selection { background: #FF3D00; color: #fff; text-shadow: none; }
+::selection { background: #FF3D00; color: #fff; text-shadow: none; }
+
+a { color: #00e; }
+a:visited { color: #551a8b; }
+a:hover { color: #06e; }
+a:focus { outline: thin dotted; }
+a:hover, a:active { outline: 0; }
+
+abbr[title] { border-bottom: 1px dotted; }
+b, strong { font-weight: bold; }
+blockquote { margin: 1em 40px; }
+dfn { font-style: italic; }
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+ins { background: #ff9; color: #000; text-decoration: none; }
+mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
+pre, code, kbd, samp { font-family: monospace, monospace; _font-family: 'courier new', monospace; font-size: 1em; }
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+q { quotes: none; }
+q:before, q:after { content: ""; content: none; }
+small { font-size: 85%; }
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+ul, ol { margin: 1em 0; padding: 0 0 0 40px; }
+dd { margin: 0 0 0 40px; }
+nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0; }
+img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
+svg:not(:root) { overflow: hidden; }
+figure { margin: 0; }
+
+form { margin: 0; }
+fieldset { border: 0; margin: 0; padding: 0; }
+label { cursor: pointer; }
+legend { border: 0; *margin-left: -7px; padding: 0; }
+button, input, select, textarea { font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle; }
+button, input { line-height: normal; *overflow: visible; }
+table button, table input { *overflow: auto; }
+button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; }
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; }
+input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
+input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+textarea { overflow: auto; vertical-align: top; resize: vertical; }
+input:valid, textarea:valid {  }
+input:invalid, textarea:invalid { background-color: #f0dddd; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+td { vertical-align: top; }
+
+
+/* ==|== primary styles =====================================================
+   Author: 
+   ========================================================================== */
+
+* {
+	margin-top: 0;
+}
+
+body {
+	line-height: 1.5;
+	font-size: 16px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	background: #222;
+	color: #fff;
+}
+
+a, a:visited, a:active, a:focus {
+	outline: 0;
+}
+
+a, a:visited {
+	color: #fff;
+	text-decoration: none;
+	border-bottom: 1px dotted #fff;
+	-webkit-transition: all 0.2s ease;
+  	-moz-transition:    all 0.2s ease;
+  	-o-transition:      all 0.2s ease;
+  	transition: 		all 0.2s ease;
+}
+
+a:hover {
+	color: #fff;
+	border-bottom-style: solid;
+	border-bottom-width: 3px;
+}
+
+h1, h2, h3, #main-nav, .play, .back, .meta .col-1, .copyright {
+	font-family: 'FunctionPro', sans-serif;
+	font-weight: normal;
+}
+
+p {
+	margin-bottom: 1.5em;
+}
+
+/* @group Animation */
+
+/*
+Animate.css - http://daneden.me/animate
+LICENSED UNDER THE  MIT LICENSE (MIT)
+
+Copyright (c) 2011 Dan Eden
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+*/
+
+.animated {
+	-webkit-animation-fill-mode: both;
+	-moz-animation-fill-mode: both;
+	-ms-animation-fill-mode: both;
+	-o-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation: 1s ease;
+	-moz-animation: 1s ease;
+	-ms-animation: 1s ease;
+	-o-animation: 1s ease;
+	animation: 1s ease;
+}
+
+/* @group Pulse */
+
+/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
+
+@-webkit-keyframes pulse {
+    0% { -webkit-transform: scale(1); }	
+	50% { -webkit-transform: scale(1.25); }
+    100% { -webkit-transform: scale(1); }
+}
+@-moz-keyframes pulse {
+    0% { -moz-transform: scale(1); }	
+	50% { -moz-transform: scale(1.25); }
+    100% { -moz-transform: scale(1); }
+}
+@-ms-keyframes pulse {
+    0% { -ms-transform: scale(1); }	
+	50% { -ms-transform: scale(1.25); }
+    100% { -ms-transform: scale(1); }
+}
+@-o-keyframes pulse {
+    0% { -o-transform: scale(1); }	
+	50% { -o-transform: scale(1.25); }
+    100% { -o-transform: scale(1); }
+}
+@keyframes pulse {
+    0% { transform: scale(1); }	
+	50% { transform: scale(1.25); }
+    100% { transform: scale(1); }
+}
+
+.pulse {
+	-webkit-animation-name: pulse;
+	-moz-animation-name: pulse;
+	-ms-animation-name: pulse;
+	-o-animation-name: pulse;
+	animation-name: pulse;
+	
+	-webkit-animation-delay:0.4s;
+	-moz-animation-delay:0.4s;
+	-ms-animation-delay:0.4s;
+	-o-animation-delay:0.4s;
+	animation-delay:0.4s;
+}
+
+/* @end */
+
+/* @end */
+
+/* @group Nav */
+
+#main-nav {
+	position: fixed;
+	z-index: 10;
+	top: 40px;
+	-webkit-transition: all 0.2s ease;
+  	-moz-transition:    all 0.2s ease;
+  	-o-transition:      all 0.2s ease;
+  	transition: 		all 0.2s ease;
+}
+
+.watching {
+	margin-left: -20px;
+	opacity: .2;
+	filter: alpha(opacity=20);
+}
+
+#main-nav li {
+	height: 40px;
+}
+
+#main-nav a {
+	background-color: #ccc;
+	line-height: 40px;
+	display: inline-block;
+	height: 40px;
+	position: relative;
+	border: none;
+	color: #fff;
+	font-size: 0;
+	padding-left: 40px;
+	overflow: hidden;
+	-webkit-transition: all 0.2s ease;
+  	-moz-transition:    all 0.2s ease;
+  	-o-transition:      all 0.2s ease;
+  	transition: 		all 0.2s ease;
+}
+
+#main-nav a:hover {
+	font-size: 18px;
+	padding-right: 20px;
+}
+
+#main-nav .active a {
+	padding-right: 20px;
+}
+
+#nav-about a {
+	background: #fff;
+	color: #222;
+}
+
+#nav-reel a {
+	background: #a1a1a1;
+}
+
+#nav-bats a {
+	background: #DB8F0A;
+}
+
+#nav-crater-lake a {
+	background: #405B69;
+}
+
+#nav-tn-aquarium a {
+	background: #25818A;
+}
+
+#nav-contact a {
+	background: #333;
+}
+
+/* @group Alternate methods */
+
+/*#main-nav {
+	-webkit-transition: all 0.2s ease;
+  	-moz-transition:    all 0.2s ease;
+  	-o-transition:      all 0.2s ease;
+  	transition: 		all 0.2s ease;
+}
+
+#main-nav a {
+	background-color: #ccc;
+	line-height: 40px;
+	display: inline-block;
+	height: 40px;
+	position: relative;
+	
+	border: none;
+	color: #fff;
+	
+	padding-left: 40px;
+	
+	-webkit-transition: all 0.2s ease;
+  	-moz-transition:    all 0.2s ease;
+  	-o-transition:      all 0.2s ease;
+  	transition: 		all 0.2s ease;
+}
+
+#main-nav a:hover {
+	padding-right: 20px;
+}
+
+#main-nav a span {
+	opacity: 0;
+	filter: alpha(opacity=0);
+	white-space: nowrap;
+	margin-left: -120px;
+	 
+	
+	-webkit-transition: all 0.2s ease;
+  	-moz-transition:    all 0.2s ease;
+  	-o-transition:      all 0.2s ease;
+  	transition: 		all 0.2s ease;
+
+}
+
+#main-nav a:hover span {
+	margin: 0;
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
+
+#main-nav .active a {
+	padding-right: 20px;
+}
+
+#nav-about a {
+	background: #B8B8B8;
+}
+
+#nav-bats a {
+	background: #DB8F0A;
+}
+
+#nav-crater-lake a {
+	background: #405B69;
+}
+
+#nav-tn-aquarium a {
+	background: #25818A;
+}
+
+#nav-contact a {
+	background: #333;
+}*/
+
+/* @end */
+
+
+
+
+/* @end */
+
+/* @group Play */
+
+a.play, a.play:visited {
+	font-style: italic;
+	text-transform: uppercase;
+	color: #111;
+	text-decoration: none;
+	font-size: 18px;
+	line-height: 80px;
+	text-align: center;
+	width: 80px;
+	height: 80px;
+	display: block;
+	position: absolute;
+	top: 0px;
+	right: 0;
+	z-index: 10;
+	border: none;
+}
+
+.play .title, .play .circle, .play .triangle {
+	-webkit-transition: all 0.2s ease;
+  	-moz-transition:    all 0.2s ease;
+  	-o-transition:      all 0.2s ease;
+  	transition: 		all 0.2s ease;
+}
+
+.play:hover {
+	border: none;
+}
+
+.play:hover .title {
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+
+.oldie .play:hover .title {
+	color: #fff;
+}
+
+.play .circle {
+	width: 80px;
+	height: 80px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	border-radius: 100px;
+	background-color: #fff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -40px;
+	margin-left: -40px;
+	z-index: -1;
+}
+
+.play:hover .circle {
+	width: 30px;
+	height: 30px;
+	margin-top: -15px;
+	margin-left: -15px;
+}
+
+.play .triangle {
+	width: 0;
+	height: 0;
+	border-left: 60px solid #fff;
+	border-top: 30px solid transparent;
+	border-bottom: 30px solid transparent;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -25px;
+	margin-top: -30px;
+	z-index: -2;
+}
+
+.play:hover .triangle {
+	border-left: 80px solid #fff;
+	border-top: 40px solid transparent;
+	border-bottom: 40px solid transparent;
+	margin-left: -34px;
+	margin-top: -40px;
+}
+
+/* @end */
+
+/* @group Video */
+
+.video-container, .video-player-container {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #111;
+}
+
+.video-player-container {	
+	display: table;	
+}
+
+.video-player {
+	display: table-cell;
+	vertical-align: middle;
+	padding: 0 60px;
+	text-align: center;
+}
+
+.videocontent {
+	margin:0 auto;
+}
+
+a.back {
+	position: absolute;
+	top: 40px;
+	right: 40px;
+	color: #fff;
+	border: none;
+	opacity: .5;
+	filter: alpha(opacity=50);
+	-webkit-transition: all 0.2s ease;
+  	-moz-transition:    all 0.2s ease;
+  	-o-transition:      all 0.2s ease;
+  	transition: 		all 0.2s ease;
+	text-transform: uppercase;
+	font-style: italic;
+	font-size: 18px;
+}
+
+a.back:hover {
+	border: none;
+	background: none;
+	padding-right: 5px;
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
+
+/* @end */
+
+/* @group Panels */
+
+.panel {
+	position: relative;
+	overflow: hidden;
+	/*min-width: 540px;
+	min-height: 480px*/;
+}
+
+.playing .info-container {
+	left: -100%;
+	opacity: .5;
+	filter: alpha(opacity=50);
+}
+
+.name {
+	font-style: italic;
+	text-transform: uppercase;
+}
+
+.logo {
+	width: 80px;
+	height: 80px;
+	position: absolute;
+	top: 5px;
+	right: 0;
+	background: url(../img/sprite.png) no-repeat;
+}
+
+.logo:hover {
+	cursor: default;
+	border: none;
+}
+
+.contact {
+	width: 80px;
+	height: 52px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: url(../img/sprite.png) no-repeat 0 -150px;
+}
+
+.contact:hover {
+	border: none;
+}
+
+.copyright {
+	position: absolute;
+	bottom: 40px;
+	left: 40px;
+	color: #666;
+	font-size: 12px;
+}
+
+/* @group Video Info */
+
+.info-container {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 1;
+	-webkit-transition: all 0.4s ease-out;
+  	-moz-transition:    all 0.4s ease-out;
+  	-o-transition:      all 0.4s ease-out;
+  	transition: 		all 0.4s ease-out;
+}
+
+.info-wrapper {
+	width: 400px;
+	position: absolute;
+	left: 50%;
+	margin-left: -200px;
+	height: 350px;
+	top: 50%;
+	margin-top: -175px;
+}
+
+.info {
+	width: 300px;
+}
+
+.info h1 {
+	font-size: 36px;
+	line-height: 48px;
+	margin-bottom: 24px;
+}
+
+.meta .col-1 {
+	width: 25%;
+	letter-spacing: 1px;
+	font-size: 12px;
+	text-transform: uppercase;
+	vertical-align: top;
+	line-height: 21px;
+}
+
+.meta .col-2 {
+	width: 75%;
+	font-size: 14px;
+}
+
+/* @end */
+
+/* @group Share */
+
+.share {
+	width: 160px;
+	height: 22px;	
+	text-align: right;
+	position: absolute;
+	bottom: 40px;
+	right: 40px;
+	z-index: 5;	
+}
+
+.twitter-share-button  {
+	float: right;
+	margin-left: 10px;
+}
+
+.playing .share iframe {
+	opacity: .2;
+	filter: alpha(opacity=20);
+	-webkit-transition: all 0.2s ease;
+  	-moz-transition:    all 0.2s ease;
+  	-o-transition:      all 0.2s ease;
+  	transition: 		all 0.2s ease;
+}
+
+.playing .share iframe:hover, .playing .next-arrow:hover, .watching:hover {
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
+
+/* @end */
+
+/* @group Next Arrow */
+
+.next-arrow {
+	width: 40px;
+	height: 40px;
+	display: block;
+	background-repeat: no-repeat;
+	background-image: url(../img/sprite.png);
+	background-position: 1px -92px;
+	position: absolute;
+	bottom: 30px;
+	left: 50%;
+	margin-left: -20px;
+	z-index: 5;
+	-webkit-transition: all 0.2s ease;
+  	-moz-transition:    all 0.2s ease;
+   	-o-transition:      all 0.2s ease;
+  	transition: 		all 0.2s ease;
+}
+
+.next-arrow:hover {
+	background-position: 1px -87px;
+	border: none;
+}
+
+.playing .next-arrow {
+	opacity: .2;
+	filter: alpha(opacity=20);	
+}
+
+/* @end */
+
+/* @group Backgrounds */
+
+/*http://css-tricks.com/perfect-full-page-background-image/*/
+
+#about, #contact {
+	background-image: url(../img/noise.gif);
+}
+
+#reel .info-container {
+	background: url(../img/reel.gif) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#bats .info-container {
+	background: url(../img/bats.gif) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#crater-lake .info-container {
+	background: url(../img/crater-lake.gif) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#tn-aquarium .info-container {
+	background: url(../img/tn-aquarium.gif) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.oldie #bats .info-container, .oldie #crater-lake .info-container, .oldie #tn-aquarium .info-container {
+	background: none;
+}
+
+img.bg {
+    /* Set rules to fill background */
+    min-height: 100%;
+    min-width: 500px;
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: auto;
+    /* Set up positioning */
+    position: absolute;
+    top: 0;
+    left: 0;
+  	/*Set behind content*/
+    z-index: -1;
+}
+
+/* @end */
+
+/* @end */
+
+
+
+
+/* ==|== non-semantic helper classes ======================================== */
+.ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; }
+.ir br { display: none; }
+.hidden { display: none !important; visibility: hidden; }
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+.invisible { visibility: hidden; }
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+
+/* ==|== media queries ====================================================== */
+
+@media only screen and (max-width: 540px) {
+
+.panel {
+	min-height: 420px;
+}
+
+.info-wrapper {
+	width: 280px;
+	height: auto;
+	position: static;
+	margin: 24px auto;
+}
+
+.info {
+	width: 100%;
+}
+
+.logo, a.play {
+	position: static;
+	margin: 36px auto 0;
+}
+
+.play .circle, .play .triangle {
+	display: none;
+}
+
+.play {
+	background-color: #fff;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	border-radius: 100px;
+}
+
+.play:hover .title {
+	opacity: 1;
+}
+
+.share {	
+	text-align: left;
+	width: 280px;
+	left: 50%;
+	margin-left: -140px;
+}
+
+.share iframe, .twitter-share-button {
+	float: left;
+}
+
+.playing .share iframe {
+	opacity: 1;
+}
+
+a.back {
+	opacity: 1;
+	width: 280px;
+	left: 50%;
+	top: 20px;
+	margin-left: -140px;	
+}
+
+.copyright {
+	bottom: 40px;
+	width: 280px;
+	left: 50%;
+	margin-left: -140px;
+}
+
+#contact .share {
+	bottom: 70px;
+}
+
+#main-nav, .meta, .contact, .next-arrow {
+	display: none;
+}
+
+
+}
+
+
+
+/* ==|== print styles ======================================================= */
+ 
+@media print {
+  * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } 
+  a, a:visited { text-decoration: underline; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; } 
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  thead { display: table-header-group; }
+  tr, img { page-break-inside: avoid; }
+  img { max-width: 100% !important; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3 { page-break-after: avoid; }
+}
