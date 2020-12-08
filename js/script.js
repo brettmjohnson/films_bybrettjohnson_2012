@@ -6,16 +6,8 @@
 
 $(document).ready(function() {
 
-	// FitVids
-    $(".video").fitVids();
-
-
 	// Bootstrap ScrollSpy
 	$('body > #mainNav').scrollSpy();	
-
-	
-	// animate scrolling
-	$.localScroll({duration:400});
 	
 	
 	// set panels equal to window size
@@ -63,9 +55,7 @@ $(document).ready(function() {
 			// reset nav
 			$("#main-nav").removeClass('watching'); 
 			//scroll to perfectly position
-			$.scrollTo( "#" + currentId, 400);
-			// animate share buttons
-			$("#" + currentId + " .share").addClass('animated');
+			window.location.href = "#" + currentId;
 		});
 	}
 
@@ -103,12 +93,8 @@ $(document).ready(function() {
 		}
 		
 		//scroll to perfectly position
-		$.scrollTo( "#" + currentId, 400);
+		window.location.href = "#" + currentId;
 		
-		
-		
-		$("#" + currentId + " .share").removeClass('animated');
-
 		return false;
 	});
 	
