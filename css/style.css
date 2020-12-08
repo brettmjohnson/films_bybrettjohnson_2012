@@ -691,6 +691,10 @@ a.back {
 	display: none;
 }
 
+.video-container {
+	padding: 0 20px;
+}
+
 
 }
 
