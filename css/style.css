@@ -112,10 +112,7 @@ a, a:visited {
 	color: #fff;
 	text-decoration: none;
 	border-bottom: 1px dotted #fff;
-	-webkit-transition: all 0.2s ease;
-  	-moz-transition:    all 0.2s ease;
-  	-o-transition:      all 0.2s ease;
-  	transition: 		all 0.2s ease;
+  	transition: all 0.2s ease;
 }
 
 a:hover {
@@ -149,15 +146,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 */
 
 .animated {
-	-webkit-animation-fill-mode: both;
-	-moz-animation-fill-mode: both;
-	-ms-animation-fill-mode: both;
-	-o-animation-fill-mode: both;
 	animation-fill-mode: both;
-	-webkit-animation: 1s ease;
-	-moz-animation: 1s ease;
-	-ms-animation: 1s ease;
-	-o-animation: 1s ease;
 	animation: 1s ease;
 }
 
@@ -165,26 +154,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 /* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
 
-@-webkit-keyframes pulse {
-    0% { -webkit-transform: scale(1); }	
-	50% { -webkit-transform: scale(1.25); }
-    100% { -webkit-transform: scale(1); }
-}
-@-moz-keyframes pulse {
-    0% { -moz-transform: scale(1); }	
-	50% { -moz-transform: scale(1.25); }
-    100% { -moz-transform: scale(1); }
-}
-@-ms-keyframes pulse {
-    0% { -ms-transform: scale(1); }	
-	50% { -ms-transform: scale(1.25); }
-    100% { -ms-transform: scale(1); }
-}
-@-o-keyframes pulse {
-    0% { -o-transform: scale(1); }	
-	50% { -o-transform: scale(1.25); }
-    100% { -o-transform: scale(1); }
-}
 @keyframes pulse {
     0% { transform: scale(1); }	
 	50% { transform: scale(1.25); }
@@ -192,16 +161,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 .pulse {
-	-webkit-animation-name: pulse;
-	-moz-animation-name: pulse;
-	-ms-animation-name: pulse;
-	-o-animation-name: pulse;
 	animation-name: pulse;
 	
-	-webkit-animation-delay:0.4s;
-	-moz-animation-delay:0.4s;
-	-ms-animation-delay:0.4s;
-	-o-animation-delay:0.4s;
 	animation-delay:0.4s;
 }
 
@@ -215,10 +176,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 	position: fixed;
 	z-index: 10;
 	top: 40px;
-	-webkit-transition: all 0.2s ease;
-  	-moz-transition:    all 0.2s ease;
-  	-o-transition:      all 0.2s ease;
-  	transition: 		all 0.2s ease;
+  	transition: all 0.2s ease;
 }
 
 .watching {
@@ -242,10 +200,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 	font-size: 0;
 	padding-left: 40px;
 	overflow: hidden;
-	-webkit-transition: all 0.2s ease;
-  	-moz-transition:    all 0.2s ease;
-  	-o-transition:      all 0.2s ease;
-  	transition: 		all 0.2s ease;
+  	transition: all 0.2s ease;
 }
 
 #main-nav a:hover {
@@ -285,9 +240,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 /* @group Alternate methods */
 
 /*#main-nav {
-	-webkit-transition: all 0.2s ease;
-  	-moz-transition:    all 0.2s ease;
-  	-o-transition:      all 0.2s ease;
   	transition: 		all 0.2s ease;
 }
 
@@ -303,9 +255,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 	
 	padding-left: 40px;
 	
-	-webkit-transition: all 0.2s ease;
-  	-moz-transition:    all 0.2s ease;
-  	-o-transition:      all 0.2s ease;
   	transition: 		all 0.2s ease;
 }
 
@@ -318,11 +267,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 	filter: alpha(opacity=0);
 	white-space: nowrap;
 	margin-left: -120px;
-	 
-	
-	-webkit-transition: all 0.2s ease;
-  	-moz-transition:    all 0.2s ease;
-  	-o-transition:      all 0.2s ease;
   	transition: 		all 0.2s ease;
 
 }
@@ -377,18 +321,13 @@ a.play, a.play:visited {
 	width: 80px;
 	height: 80px;
 	display: block;
-	position: absolute;
-	top: 0px;
-	right: 0;
 	z-index: 10;
 	border: none;
+	position: relative;
 }
 
 .play .title, .play .circle, .play .triangle {
-	-webkit-transition: all 0.2s ease;
-  	-moz-transition:    all 0.2s ease;
-  	-o-transition:      all 0.2s ease;
-  	transition: 		all 0.2s ease;
+  	transition: all 0.2s ease;
 }
 
 .play:hover {
@@ -407,8 +346,6 @@ a.play, a.play:visited {
 .play .circle {
 	width: 80px;
 	height: 80px;
-	-webkit-border-radius: 100px;
-	-moz-border-radius: 100px;
 	border-radius: 100px;
 	background-color: #fff;
 	position: absolute;
@@ -474,10 +411,7 @@ a.back {
 	border: none;
 	opacity: .5;
 	filter: alpha(opacity=50);
-	-webkit-transition: all 0.2s ease;
-  	-moz-transition:    all 0.2s ease;
-  	-o-transition:      all 0.2s ease;
-  	transition: 		all 0.2s ease;
+  	transition: all 0.2s ease;
 	text-transform: uppercase;
 	font-style: italic;
 	font-size: 18px;
@@ -536,9 +470,6 @@ a.back:hover {
 .logo {
 	width: 80px;
 	height: 80px;
-	position: absolute;
-	top: 5px;
-	right: 0;
 	background: url(../img/sprite.png) no-repeat;
 }
 
@@ -550,9 +481,6 @@ a.back:hover {
 .contact {
 	width: 80px;
 	height: 52px;
-	position: absolute;
-	top: 0;
-	right: 0;
 	background: url(../img/sprite.png) no-repeat 0 -150px;
 }
 
@@ -563,9 +491,10 @@ a.back:hover {
 .copyright {
 	position: absolute;
 	bottom: 40px;
-	left: 40px;
+	width: 100%;
 	color: #666;
 	font-size: 12px;
+	text-align: center;
 }
 
 /* @group Video Info */
@@ -577,20 +506,24 @@ a.back:hover {
 	left: 0;
 	top: 0;
 	z-index: 1;
-	-webkit-transition: all 0.4s ease-out;
-  	-moz-transition:    all 0.4s ease-out;
-  	-o-transition:      all 0.4s ease-out;
-  	transition: 		all 0.4s ease-out;
+	transition: all 0.4s ease-out; 
+	display: grid;
+	place-items: center;
 }
 
 .info-wrapper {
-	width: 400px;
+	/* width: 400px;
 	position: absolute;
 	left: 50%;
 	margin-left: -200px;
 	height: 350px;
 	top: 50%;
-	margin-top: -175px;
+	margin-top: -175px; */
+
+	margin-bottom: 30px;
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: auto 80px;
 }
 
 .info {
@@ -619,39 +552,6 @@ a.back:hover {
 
 /* @end */
 
-/* @group Share */
-
-.share {
-	width: 160px;
-	height: 22px;	
-	text-align: right;
-	position: absolute;
-	bottom: 40px;
-	right: 40px;
-	z-index: 5;	
-}
-
-.twitter-share-button  {
-	float: right;
-	margin-left: 10px;
-}
-
-.playing .share iframe {
-	opacity: .2;
-	filter: alpha(opacity=20);
-	-webkit-transition: all 0.2s ease;
-  	-moz-transition:    all 0.2s ease;
-  	-o-transition:      all 0.2s ease;
-  	transition: 		all 0.2s ease;
-}
-
-.playing .share iframe:hover, .playing .next-arrow:hover, .watching:hover {
-	opacity: 1;
-	filter: alpha(opacity=100);
-}
-
-/* @end */
-
 /* @group Next Arrow */
 
 .next-arrow {
@@ -666,10 +566,7 @@ a.back:hover {
 	left: 50%;
 	margin-left: -20px;
 	z-index: 5;
-	-webkit-transition: all 0.2s ease;
-  	-moz-transition:    all 0.2s ease;
-   	-o-transition:      all 0.2s ease;
-  	transition: 		all 0.2s ease;
+  	transition: all 0.2s ease;
 }
 
 .next-arrow:hover {
@@ -694,33 +591,21 @@ a.back:hover {
 
 #reel .info-container {
 	background: url(../img/reel.gif) no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
 }
 
 #bats .info-container {
 	background: url(../img/bats.gif) no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
 }
 
 #crater-lake .info-container {
 	background: url(../img/crater-lake.gif) no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
 }
 
 #tn-aquarium .info-container {
 	background: url(../img/tn-aquarium.gif) no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
 }
 
@@ -771,19 +656,15 @@ img.bg {
 }
 
 .info-wrapper {
-	width: 280px;
-	height: auto;
-	position: static;
-	margin: 24px auto;
+	width: 100%;
+	max-width: 430px;
+	padding: 20px;
+	box-sizing: border-box;
+	grid-gap: 10px;
 }
 
 .info {
 	width: 100%;
-}
-
-.logo, a.play {
-	position: static;
-	margin: 36px auto 0;
 }
 
 .play .circle, .play .triangle {
@@ -792,8 +673,6 @@ img.bg {
 
 .play {
 	background-color: #fff;
-	-webkit-border-radius: 100px;
-	-moz-border-radius: 100px;
 	border-radius: 100px;
 }
 
@@ -801,41 +680,14 @@ img.bg {
 	opacity: 1;
 }
 
-.share {	
-	text-align: left;
-	width: 280px;
-	left: 50%;
-	margin-left: -140px;
-}
-
-.share iframe, .twitter-share-button {
-	float: left;
-}
-
-.playing .share iframe {
-	opacity: 1;
-}
-
 a.back {
-	opacity: 1;
-	width: 280px;
-	left: 50%;
+	position: absolute;
 	top: 20px;
-	margin-left: -140px;	
+	left: 20px;
+	right: auto;
 }
 
-.copyright {
-	bottom: 40px;
-	width: 280px;
-	left: 50%;
-	margin-left: -140px;
-}
-
-#contact .share {
-	bottom: 70px;
-}
-
-#main-nav, .meta, .contact, .next-arrow {
+#main-nav, .next-arrow {
 	display: none;
 }
 
