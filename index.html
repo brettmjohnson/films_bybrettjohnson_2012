@@ -221,7 +221,7 @@
 	</div> <!--! end of #container -->
 
 	<script src="js/libs/jquery-1.6.2.min.js"></script>
-
+	
 	<!-- <script src="http://a.vimeocdn.com/js/froogaloop2.min.js"></script> -->
 	<script src="js/libs/froogaloop2.min.js"></script>
 
@@ -230,6 +230,11 @@
 	<script defer src="js/script.js"></script>
 	<!-- end scripts-->
 
-	<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "9773436f67644cc6bc27953572441a24"}'></script><!-- End Cloudflare Web Analytics -->
+	<script>
+		window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+		ga('create', 'UA-18026229-5', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+	</script>
+	<script src="https://www.google-analytics.com/analytics.js" async></script>
+  
 </body>
 </html>
